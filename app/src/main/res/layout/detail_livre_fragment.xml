@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.mylibrary.fragment.DetailLivreFragment">
+
+
+    <TextView
+        android:id="@+id/nom_auteur"
+        style="@style/TextStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Auteur"/>
+    <ImageView
+        android:id="@+id/auteur_image"
+        android:layout_width="@dimen/imageSize"
+        android:layout_height="@dimen/imageSize"
+        android:layout_marginTop="@dimen/marginLayout"
+        android:layout_gravity="center"
+        android:src="@mipmap/ic_auteur"/>
+    <TextView
+        android:id="@+id/resume"
+        style="@style/TextStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="cette paragraphe est une résumé"/>
+
+</LinearLayout>

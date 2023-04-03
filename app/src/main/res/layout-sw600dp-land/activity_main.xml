@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    tools:context="com.example.mylibrary.MainActivity">
+
+    <ListView
+        android:id="@+id/land_list_livre"
+        android:layout_width="@dimen/layoutWidth"
+        android:layout_height="match_parent" />
+    <LinearLayout
+        android:id="@+id/details_layout"
+        android:layout_width="@dimen/layoutWidth"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/land_name_auteur"
+            style="@style/TextStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Auteur"/>
+        <ImageView
+            android:id="@+id/land_auteur_image"
+            android:layout_width="@dimen/imageSize"
+            android:layout_height="@dimen/imageSize"
+            android:scaleType="centerCrop"
+            android:layout_marginTop="@dimen/marginLayout"
+            android:layout_gravity="center"
+            android:src="@mipmap/ic_auteur"/>
+        <TextView
+            android:id="@+id/land_resume"
+            style="@style/TextStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="cette paragraphe est une résumé"/>
+
+    </LinearLayout>
+
+</LinearLayout>
